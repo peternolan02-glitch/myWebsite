@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- decalre file type html -->
+<html lang="en"> <!-- decalre language english -->
+
+<head> <!-- header -->
+    <meta charset="UTF-8"> <!-- Allows symbols to display corectly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Match screen width, makes work on phone -->
+    <title>Contact – Brewed Awakening</title> <!-- Appear on browsers tab -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link the css file (required in all files) -->
+</head> <!-- close header -->
+
+<body>
+
+    <header> <!-- declares header of page -->
+        <h1> Brewed Awakening </h1> <!-- H1 is most important header for the page -->
+    </header> <!-- close the header of page tag -->
+
+    <nav> <!-- navigation links -->
+        <a href="index.html"> Home </a> <!-- href tells where link goes -->
+        <a href="about.html"> About </a>
+        <a href="services.html"> Menu </a>
+        <a href="contact.html" class="active"> Contact </a> <!-- active marks current page for css styling -->
+    </nav> <!-- close nav tag -->
+
+    <main> <!-- main body tag -->
+
+        <section class="contact-details"> <!-- section for business contact info -->
+            <h2> Find Us </h2> <!-- sub heading -->
+            <p> 12 Maple Street, Dublin 2, Ireland </p> <!-- business address -->
+            <p> Phone: +353 1 234 5678 </p> <!-- business phone -->
+            <p> Email: hello@brewedawakening.ie </p> <!-- business email -->
+        </section> <!-- close contact-details section -->
+
+        <section class="contact-form"> <!-- section for contact form -->
+            <h2> Get In Touch </h2> <!-- sub heading -->
+            <form> <!-- start of contact form -->
+
+                <label for="name"> Name </label> <!-- label for name input -->
+                <input type="text" id="name" name="name" placeholder="Your full name"> <!-- text input field -->
+
+                <label for="email"> Email </label> <!-- label for email input -->
+                <input type="email" id="email" name="email" placeholder="Your email address"> <!-- email input field the user sees email address -->
+
+                <label for="phone"> Phone </label> <!-- label for phone input -->
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number"> <!-- tel input field -->
+
+                <label for="reason"> Reason for Contact </label> <!-- label for dropdown -->
+                <select id="reason" name="reason"> <!-- select dropdown -->
+                    <option value=""> -- Please select -- </option> <!-- default empty option -->
+                    <option value="catering"> Catering Enquiry </option> <!-- option 2 -->
+                    <option value="feedback"> Leave Feedback </option> <!-- option 3 -->
+                    <option value="other"> Other </option> <!-- option 4 -->
+                </select> <!-- close dropdown -->
+
+                <label for="message"> Message </label> <!-- label for textarea -->
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea> <!-- textarea min 4 rows -->
+
+                <button type="submit"> Send Message </button> <!-- submit button -->
+
+            </form> <!-- close contact form -->
+        </section> <!-- close contact-form section -->
+
+        <section class="contact-video"> <!-- section for embedded video -->
+            <h2> A Message From Us </h2> <!-- sub heading -->
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ZgIVfpnAQcA"
+                title="Brewed Awakening welcome video"
+                allowfullscreen> <!-- allows video to go fullscreen -->
+            </iframe>
+        </section> <!-- close contact-video section -->
+
+        <section class="contact-map"> <!-- section for google map embedded map -->
+            <h2> Our Location </h2> <!-- sub heading -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jdguVU0F7fs?si=BdGViur72WnVCwFO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section> <!-- close contact-map section -->
+
+    </main> <!-- close main section tag -->
+
+    <footer> <!-- add page footer -->
+        <p> Happily brewing since Brewed Awakening &copy; 2026 </p>
+    </footer> <!-- close footer -->
+
+</body>
+</html>
