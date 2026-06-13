@@ -1,1 +1,235 @@
+/* ============================================
+   Overall goal
+   3 colours
+   rounded images 
+   centered text 
+   georgia serif
 
+
+============================================ */
+
+
+/* ============================================
+   GLOBAL RESET
+============================================ */
+
+* { /* targets every single element on the page */
+    margin: 0; /* remvoe default margin from everything */
+    padding: 0; /* remove default padding from everything */
+    box-sizing: border-box; /* padding and border included in element width */
+}
+
+body { /* styles the entire page body */
+    font-family: Georgia, serif; /* main font used accross all pages */
+    background-color: #fdf6ec; /* warm cream background colour */
+    color: #3b2a1a; /* dark brown defualt text colour */
+}
+
+/* ============================================
+   HEADER
+============================================ */
+
+header { /* styles the header tag on all pages */
+    background-color: #6b3a2a; /* dark coffee brown background */
+    color: #fdf6ec; /* cream coloured text */
+    text-align: center; /* centers everything inside header */
+    padding: 20px 20px; /* 30px top/bottom 20px left/right space inside */
+}
+
+header h1 { /* targets the h1 inside the header only */
+    font-size: 2.2em; /* makes the buisness name large */
+    letter-spacing: 2px; /* slight gap between each letter */
+}
+
+/* ============================================
+   NAVIGATION
+============================================ */
+
+nav { /* styles the nav bar on all pages */
+    background-color: #3b2a1a; /* darker brown than the header */
+    text-align: center; /* centers the nav links */
+    padding: 10px 0; /* space above and below the links */
+}
+
+nav a { /* styles all links inside the nav */
+    color: #fdf6ec; /* cream coloured link text */
+    text-decoration: none; /* removes the defualt underline from links */
+    margin: 0 25px; /* space between each nav link */
+    font-size: 1em; /* normal text size */
+}
+
+nav a:hover { /* styles a nav link when mouse hovers over it */
+    color: ##5a3020; /* changes when hovering */
+    text-decoration: underline; /* adds underline on hover */
+}
+
+nav a.active { /* styles the link of the curent page */
+    color: #d4a96a; /* gold colour to show current page */
+    font-weight: bold; /* bold to stand out from other links */
+}
+
+/* ============================================
+   MAIN CONTENT
+============================================ */
+
+main { /* styles the main content area on all pages */
+    max-width: 900px; /* stops content stretching too wide on big screens */
+    margin: 25px auto; /* 30px top/bottom, auto left/right centers it */
+    padding: 10 20px; /* space on left and right sides */
+}
+
+section { /* styles every section tag on all pages */
+    margin-bottom: 30px; /* space below each section */
+}
+
+h2 { /* styles all h2 subheadings accross all pages */
+    font-size: 2em; /* slightly smaller than h1 */
+    color: #6b3a2a; /* brown colour for subheadings */
+    margin-bottom: 20px; /* space below the heading */
+}
+
+p { /* styles all pragraph text accross all pages */
+    line-height: 1.9; /* space between each line of text */
+    margin-bottom: 10px; /* space below each paragraph */
+}
+
+/* ============================================
+   HERO IMAGE (index.html)
+============================================ */
+
+.hero img { /* targets the image inside the hero section */
+    width: 100%; /* fills the full width of its container */
+    max-width: 860px; /* stops it getting too wide on large screens */
+    height: 320px; /* fixed height for the hero image */
+    object-fit: cover; /* crops image to fill box without stretching */
+    display: block; /* removes inline spacing below image */
+    margin: 0 auto 25px auto; /* centers image and adds space below */
+    border-radius: 10px; /* slightly rounded corners */
+}
+
+.hero h2 { /* targets the tagline h2 inside the hero section */
+    text-align: center; /* centers the tagline text */
+    font-style: italic; /* makes the tagline itlalic */
+}
+
+/* ============================================
+   LISTS
+============================================ */
+
+ul, ol { /* styles both unordered and ordered lists */
+    padding-left: 20px; /* indents the list from the left */
+    line-height: 1.9; /* space between each list item */
+}
+
+/* ============================================
+   ABOUT IMAGE (about.html)
+============================================ */
+
+.about-image img { /* targets the image inside the about-image section */
+    width: 100%; /* fills the container width */
+    max-width: 600px; /* caps width on large screens */
+    height: 300px; /* fixed height */
+    object-fit: cover; /* crops image to fit without stretching */
+    display: block; /* removes inline spacing below image */
+    margin: 0 auto; /* centers the image */
+    border-radius: 10px; /* slightly rounded corners */
+}
+
+/* ============================================
+   TABLE (services.html)
+============================================ */
+
+table { /* styles the data table on services page */
+    width: 100%; /* table fills full width of container */
+    border-collapse: collapse; /* removes gaps between cell borders */
+    margin-top: 20px; /* space above the table */
+}
+
+thead { /* styles the header row of the table */
+    background-color: #6b3a2a; /* dark brown backround for header row */
+    color: #fdf6ec; /* cream text in the header */
+}
+
+th, td { /* styles all header cells and data cells */
+    border: 1px solid #c4a882; /* light brown border around every cell */
+    padding: 12px 15px; /* space inside each cell */
+    text-align: left; /* aligns text to the left */
+}
+
+tbody tr:nth-child(even) { /* targets every even numbered row in tbody */
+    background-color: #f5e6d0; /* slightly darker cream for even rows */
+}
+
+tbody tr:nth-child(odd) { /* targets every odd numberd row in tbody */
+    background-color: #fdf6ec; /* base cream colour for odd rows */
+}
+
+/* ============================================
+   IFRAMES (videos and map)
+============================================ */
+
+iframe { /* styles all iframes, videos and google map */
+    display: block; /* removes inline spacing */
+    margin: 15px auto; /* centers the iframe and adds space above/below */
+    max-width: 100%; /* stops iframe overflowing on small screens */
+    border: none; /* removes defualt iframe border */
+    border-radius: 8px; /* slightly rounded corners */
+}
+
+/* ============================================
+   CONTACT FORM (contact.html)
+============================================ */
+
+form { /* styles the contact form container */
+    display: flex; /* uses flexbox to lay out form elements */
+    flex-direction: column; /* stacks labels and inputs verticaly */
+    max-width: 600px; /* caps the form width */
+}
+
+label { /* styles all labels in the form */
+    font-weight: bold; /* makes labels bold */
+    margin-top: 15px; /* space above each label */
+    color: #3b2a1a; /* dark brown label text */
+}
+
+input, select, textarea { /* styles all input fields dropdown and textarea */
+    padding: 10px; /* space inside the input field */
+    border: 1px solid #c4a882; /* light brown border */
+    border-radius: 4px; /* slightly rounded corners */
+    font-size: 1em; /* normal text size */
+    font-family: Georgia, serif; /* match the rest of the page font */
+}
+
+input:focus, select:focus, textarea:focus { /* styles a field when the user clicks on it */
+    outline: none; /* removes default blue browser outline */
+    border-color: #6b3a2a; /* brown border when field is active */
+    box-shadow: 0 0 4px #d4a96a; /* gold glow around the focussed field */
+}
+
+button[type="submit"] { /* styles the submit button */
+    margin-top: 20px; /* space above the button */
+    padding: 12px; /* space inside the button */
+    background-color: #6b3a2a; /* dark brown button backround */
+    color: #fdf6ec; /* cream button text */
+    border: none; /* remove default button border */
+    border-radius: 4px; /* slightly rounded corners */
+    font-size: 1em; /* normal text size */
+    cursor: pointer; /* shows a hand cursor when hovering */
+}
+
+button[type="submit"]:hover { /* styles the button when mouse hovers */
+    background-color: #d4a96a; /* gold backround on hover */
+    color: #3b2a1a; /* dark brown text on hover */
+}
+
+/* ============================================
+   FOOTER
+============================================ */
+
+footer { /* styles the footer on all pages */
+    background-color: #3b2a1a; /* dark brown footer backround */
+    color: #fdf6ec; /* cream footer text */
+    text-align: center; /* centers the footer text */
+    padding: 20px; /* space inside the footer */
+    margin-top: 40px; /* space above the footer */
+}
